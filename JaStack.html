@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+	function stackShow(){
+		let stack=[];
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+		stack.push(4);
+		stack.push(5);
+		stack.push(6);
+		stack.push(7);
+		document.getElementById("demo").innerHTML=stack;
+		stack.pop();
+		stack.pop();
+		document.getElementById("demo1").innerHTML=stack;
+	}
+</script>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Stack Implimentation</h2></td>
+    </tr>
+ 
+    <tr>
+        <td><p id="demo"></p></td><td><p id="demo1"></p></td>
+    </tr>
+	<tr>
+        <td><input type="button" onclick="stackShow()" value="Stack"/></td>
+    </tr>
+    
+</table>
+</body>
+</html>
